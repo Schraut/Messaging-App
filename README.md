@@ -1,2 +1,2 @@
 # Messaging-App
-A messaging app.
+Adding a read me, will add details later.
