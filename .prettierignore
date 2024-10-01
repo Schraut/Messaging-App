@@ -1,0 +1,24 @@
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"# Ignore artifacts:
+build
+coverage
+package.json
+yarn.lock
+**/*.config.js
+# Ignore artifacts:
+build
+coverage
+package.json
+yarn.lock
+**/*.config.js
+__tests__/
+__snapshots__/
+*.test.js
+# Ignore artifacts:
+build
+coverage
+package.json
+yarn.lock
+**/*.config.js
+__tests__/
+__snapshots__/
+*.test.js
