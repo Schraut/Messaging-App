@@ -20,8 +20,6 @@ jobs:
 
       - name: Installing Dependencies
         run: yarn install
-        working-directory: ./src
 
       - name: Checking Tests
         run: yarn test
-        working-directory: ./src
