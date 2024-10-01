@@ -1,14 +1,208 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Default TestScreen renders in dark mode 1`] = `
+<View>
+  <Text>
+    Test Screen
+  </Text>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#000000",
+        "height": 160,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#FFFFFF",
+          "fontFamily": "System",
+          "fontSize": 10,
+          "fontWeight": "400",
+        }
+      }
+    >
+      Hello
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "green",
+          "height": 20,
+          "opacity": 1,
+          "width": 80,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Default TestScreen renders in light mode 1`] = `
+<View>
+  <Text>
+    Test Screen
+  </Text>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "height": 160,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#000000",
+          "fontFamily": "System",
+          "fontSize": 10,
+          "fontWeight": "400",
+        }
+      }
+    >
+      Hello
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "green",
+          "height": 20,
+          "opacity": 1,
+          "width": 80,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
 exports[`renders correctly 1`] = `
 <View>
   <Text>
     Test Screen
   </Text>
-  <View>
-    <Text>
-      Test Component
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "height": 160,
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#000000",
+          "fontFamily": "System",
+          "fontSize": 10,
+          "fontWeight": "400",
+        }
+      }
+    >
+      Hello
     </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "backgroundColor": "green",
+          "height": 20,
+          "opacity": 1,
+          "width": 80,
+        }
+      }
+    />
   </View>
 </View>
 `;

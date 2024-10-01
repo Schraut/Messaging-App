@@ -1,12 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import ThemeContent from "./resources/theme/theme";
+import TestComponent from "./src/components/TestComponent";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Messaging app is under construction!</Text>
-      <StatusBar style="auto" />
-    </View>
+    //ThemeContent is a wrapper that provides the theme to all the components
+    <ThemeContent>
+      <View style={styles.container}>
+        <TestComponent />
+        <Text>Messaging app is under construction!</Text>
+        <StatusBar style="auto" />
+      </View>
+    </ThemeContent>
   );
 }
 
