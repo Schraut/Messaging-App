@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Messaging app is under construction!</Text>
-      <StatusBar style='auto' />
+      <StatusBar style="auto" />
     </View>
   );
 }
