@@ -1,0 +1,27 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🏗 Setup repo
+        uses: actions/checkout@v3
+
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.10.0
+
+      - name: Installing Dependencies
+        run: yarn install
+        working-directory: ./src
+
+      - name: Checking Tests
+        run: yarn test
+        working-directory: ./src
