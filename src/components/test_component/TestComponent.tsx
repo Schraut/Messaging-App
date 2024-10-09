@@ -1,23 +1,44 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import { Theme, useTheme } from "../../resources/theme/theme";
-import i18n from "../../resources/i18n/internationalization";
-import { useColorScheme } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+import { Theme, useTheme } from "../../../resources/theme/theme";
+import i18n from "../../../resources/i18n/internationalization";
+import LongButton from "../buttons/LongButton";
+import Icon from "../icon/Icon";
+import RoundButton from "../buttons/RoundButton";
 
+//NOTE: Will use this component for documentation and example components
 const TestComponent = () => {
   //We import the theme and use the stylesHandler to get the styles
   const theme = useTheme();
   const styles = stylesHandler(theme);
-  const colorScheme = useColorScheme();
 
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{i18n.t("Hello")}</Text>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => {
-          console.log(colorScheme);
-        }}
+      {/* Long Button receives text, onPress, and then optionally icon, color*/}
+      <LongButton
+        onPress={() => console.log("Button Pressed")}
+        text="Press Me"
+        icon={
+          <Icon
+            iconName="add"
+            iconType={"MaterialIcons"}
+            size={24}
+            color={theme.colors.inverseBackground}
+          />
+        }
+      />
+      {/* Long Button receives icon, onPress, and then optionally color*/}
+      <RoundButton
+        onPress={() => console.log("Round Button Pressed")}
+        icon={
+          <Icon
+            iconName="add"
+            iconType={"MaterialIcons"}
+            size={24}
+            color={theme.colors.inverseBackground}
+          />
+        }
       />
     </View>
   );

@@ -26,7 +26,7 @@ const FONTS: Font = {
   textPrimary: {
     fontFamily: "System",
     fontWeight: "400",
-    fontSize: 10,
+    fontSize: 12,
   },
   textSecondary: {
     fontFamily: "System",

@@ -1,9 +1,9 @@
 import React from "react";
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "../screens/HomeScreen";
 import BottomTabs from "./BottomTabs";
 import { NavigationContainer } from "@react-navigation/native";
+import { Theme, useTheme } from "../../resources/theme/theme";
 
 type RootStackParamList = {
   BottomTabs: undefined;
@@ -12,9 +12,12 @@ type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
+  const theme = useTheme();
+  const styles = stylesHandler(theme);
+
   return (
     <NavigationContainer>
-      <View style={{ flex: 1 }}>
+      <View style={styles.container}>
         <Stack.Navigator
           screenOptions={{
             animation: "default",
@@ -33,3 +36,11 @@ export const RootNavigator = () => {
     </NavigationContainer>
   );
 };
+
+const stylesHandler = (theme: Theme) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: theme.colors.background,
+    },
+  });
