@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default MessagesScreen renders in dark mode 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#000000",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#FFFFFF",
+        "fontFamily": "System",
+        "fontSize": 12,
+      }
+    }
+  >
+    Messages Screen
+  </Text>
+</View>
+`;
+
+exports[`Default MessagesScreen renders in light mode 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#000000",
+        "fontFamily": "System",
+        "fontSize": 12,
+      }
+    }
+  >
+    Messages Screen
+  </Text>
+</View>
+`;

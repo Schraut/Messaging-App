@@ -1,15 +1,15 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import TestScreen from "../TestScreen";
 import ThemeContent from "../../../resources/theme/theme";
+import HomeScreen from "../HomeScreen";
 
-describe("Default TestScreen", () => {
+describe("Default HomeScreen", () => {
   it("renders in light mode", () => {
     const tree = renderer
       .create(
         <ThemeContent>
-          <TestScreen />
-        </ThemeContent>,
+          <HomeScreen />
+        </ThemeContent>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -19,8 +19,8 @@ describe("Default TestScreen", () => {
     const tree = renderer
       .create(
         <ThemeContent isDarkMode={true}>
-          <TestScreen />
-        </ThemeContent>,
+          <HomeScreen />
+        </ThemeContent>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

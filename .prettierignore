@@ -10,15 +10,11 @@ coverage
 package.json
 yarn.lock
 **/*.config.js
-__tests__/
 __snapshots__/
-*.test.js
 # Ignore artifacts:
 build
 coverage
 package.json
 yarn.lock
 **/*.config.js
-__tests__/
 __snapshots__/
-*.test.js
