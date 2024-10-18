@@ -24,7 +24,7 @@ describe("Default Round Button", () => {
               />
             }
           />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -46,7 +46,7 @@ describe("Default Round Button", () => {
               />
             }
           />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
