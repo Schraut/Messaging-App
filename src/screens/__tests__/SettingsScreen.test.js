@@ -9,7 +9,7 @@ describe("Default SettingsScreen", () => {
       .create(
         <ThemeContent>
           <SettingsScreen />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -20,7 +20,7 @@ describe("Default SettingsScreen", () => {
       .create(
         <ThemeContent isDarkMode={true}>
           <SettingsScreen />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

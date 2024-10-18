@@ -17,7 +17,7 @@ describe("Default Icon", () => {
             size={24}
             color={theme.colors.staticBlack}
           />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -33,7 +33,7 @@ describe("Default Icon", () => {
             size={24}
             color={theme.colors.staticBlack}
           />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
