@@ -25,7 +25,7 @@ describe("Default Long Button", () => {
               />
             }
           />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -48,7 +48,7 @@ describe("Default Long Button", () => {
               />
             }
           />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

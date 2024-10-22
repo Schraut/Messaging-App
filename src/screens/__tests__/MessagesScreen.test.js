@@ -9,7 +9,7 @@ describe("Default MessagesScreen", () => {
       .create(
         <ThemeContent>
           <MessagesScreen />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -20,7 +20,7 @@ describe("Default MessagesScreen", () => {
       .create(
         <ThemeContent isDarkMode={true}>
           <MessagesScreen />
-        </ThemeContent>
+        </ThemeContent>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
