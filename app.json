@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "messaging-app",
+    "owner": "danshrout",
+    "name": "Messaging App",
     "slug": "messaging-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,6 +25,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a62a537d-9659-40f2-96d1-1aba142ccbce"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a62a537d-9659-40f2-96d1-1aba142ccbce"
     }
   }
 }
