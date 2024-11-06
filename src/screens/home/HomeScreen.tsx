@@ -1,14 +1,13 @@
-import * as React from "react";
-import { Text, View, StyleSheet } from "react-native";
-import { Theme, useTheme } from "../../resources/theme/theme";
+import { StyleSheet, Text, View } from "react-native";
+import { Theme, useTheme } from "../../../resources/theme/theme";
 
-export default function SettingsScreen() {
+export default function HomeScreen() {
   const theme = useTheme();
   const styles = stylesHandler(theme);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Settings!</Text>
+      <Text style={styles.text}>Home Screen</Text>
     </View>
   );
 }
