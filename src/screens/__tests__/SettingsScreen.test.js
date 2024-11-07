@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import ThemeContent from "../../../resources/theme/theme";
-import SettingsScreen from "../SettingsScreen";
+import SettingsScreen from "../settings/SettingsScreen";
 
 describe("Default SettingsScreen", () => {
   it("renders in light mode", () => {

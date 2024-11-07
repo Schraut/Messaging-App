@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import ThemeContent from "../../../resources/theme/theme";
-import HomeScreen from "../HomeScreen";
+import HomeScreen from "../home/HomeScreen";
 
 describe("Default HomeScreen", () => {
   it("renders in light mode", () => {

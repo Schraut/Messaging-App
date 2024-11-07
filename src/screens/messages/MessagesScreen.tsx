@@ -1,13 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
-import { Theme, useTheme } from "../../resources/theme/theme";
+import * as React from "react";
+import { Text, View, StyleSheet } from "react-native";
+import { Theme, useTheme } from "../../../resources/theme/theme";
 
-export default function HomeScreen() {
+export default function MessagesScreen() {
   const theme = useTheme();
   const styles = stylesHandler(theme);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
+      <Text style={styles.text}>Messages Screen</Text>
     </View>
   );
 }
