@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import TestScreen from "../TestScreen";
+import TestScreen from "../test_screen/TestScreen";
 import ThemeContent from "../../../resources/theme/theme";
 
 describe("Default TestScreen", () => {

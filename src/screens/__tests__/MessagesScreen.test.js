@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import ThemeContent from "../../../resources/theme/theme";
-import MessagesScreen from "../MessagesScreen";
+import MessagesScreen from "../messages/MessagesScreen";
 
 describe("Default MessagesScreen", () => {
   it("renders in light mode", () => {
