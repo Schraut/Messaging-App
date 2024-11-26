@@ -16,25 +16,27 @@ import LongButton from "../components/buttons/LongButton";
 export default function SignInScreen({ navigation }: any) {
   const theme = useTheme();
   const styles = stylesHandler(theme);
-  const [text, setText] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <SafeAreaView style={styles.container}>
       <Image style={styles.logo} source={require("../../assets/favicon.png")} />
-      <View style={{ justifyContent: "flex-start" }}>
+      <View style={styles.infoContainer}>
         <HeaderTitle title="Create Account" />
         <Text>Please sign in to continue</Text>
         <TextInput
           style={styles.input}
-          onChangeText={setText}
-          value={text}
-          placeholder="EMAIL "
+          onChangeText={setEmail}
+          value={email}
+          placeholder="Email"
         />
         <TextInput
           style={styles.input}
-          onChangeText={setText}
-          value={text}
-          placeholder="PASSWORD"
+          onChangeText={setPassword}
+          value={password}
+          placeholder="Password"
+          secureTextEntry={true}
         />
       </View>
 
@@ -60,6 +62,10 @@ const stylesHandler = (theme: Theme) =>
       backgroundColor: theme.colors.background,
       justifyContent: "flex-start",
       alignItems: "center",
+    },
+    infoContainer: {
+      justifyContent: "flex-start",
+      marginBottom: theme.spacing(3),
     },
     text: {
       color: theme.colors.inverseBackground,
