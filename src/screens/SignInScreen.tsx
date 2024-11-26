@@ -5,7 +5,6 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
-  Alert,
   SafeAreaView,
 } from "react-native";
 import { Theme, useTheme } from "../../resources/theme/theme";
@@ -24,7 +23,9 @@ export default function SignInScreen({ navigation }: any) {
       <Image style={styles.logo} source={require("../../assets/favicon.png")} />
       <View style={styles.infoContainer}>
         <HeaderTitle title="Create Account" />
-        <Text>Please sign in to continue</Text>
+        <Text style={{ color: theme.colors.inverseBackground }}>
+          Please sign in to continue
+        </Text>
         <TextInput
           style={styles.input}
           onChangeText={setEmail}

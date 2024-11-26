@@ -2,6 +2,7 @@ import { View, StyleSheet } from "react-native";
 import { Theme, useTheme } from "../../../resources/theme/theme";
 import {
   MaterialIcons,
+  MaterialCommunityIcons,
   Ionicons,
   FontAwesome5,
   FontAwesome,
@@ -41,6 +42,8 @@ const Icon = ({ iconName, iconType, size, color }: IconProps) => {
         return Feather;
       case "AntDesign":
         return AntDesign;
+      case "MaterialCommunityIcons":
+        return MaterialCommunityIcons;
       default:
         return MaterialIcons; // Default to MaterialIcons if type is not recognized
     }

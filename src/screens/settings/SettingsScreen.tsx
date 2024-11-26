@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Text, View, StyleSheet, SafeAreaView, Image } from "react-native";
 import { Theme, useTheme } from "../../../resources/theme/theme";
+import SettingsHeader from "./SettingsHeader";
 import SettingsButton from "../../components/buttons/SettingsButton";
 import Icon from "../../components/icon/Icon";
-import SettingsHeader from "./SettingsHeader";
 
 interface SettingsScreenProps {
   navigation: any; //we may not need this. Depends on if we take it out of bottomtabs
@@ -33,55 +33,71 @@ export default function SettingsScreen({
         </Text>
         <Text style={styles.usernameText}>{username}</Text>
       </View>
-      <SettingsButton
-        onPress={() => {}}
-        text="Account"
-        icon={
-          <Icon
-            iconName="settings"
-            size={24}
-            iconType="MaterialIcon"
-            color={theme.colors.inverseBackground}
-          />
-        }
-      />
-      <SettingsButton
-        onPress={() => {}}
-        text="Notifications"
-        icon={
-          <Icon
-            iconName="settings"
-            size={24}
-            iconType="MaterialIcon"
-            color={theme.colors.inverseBackground}
-          />
-        }
-      />
-      <SettingsButton
-        onPress={() => {}}
-        text="Privacy Policy"
-        icon={
-          <Icon
-            iconName="settings"
-            size={24}
-            iconType="MaterialIcon"
-            color={theme.colors.inverseBackground}
-          />
-        }
-      />
-      <SettingsButton
-        onPress={() => {}}
-        text="Ratings"
-        icon={
-          <Icon
-            iconName="settings"
-            size={24}
-            iconType="MaterialIcon"
-            color={theme.colors.inverseBackground}
-          />
-        }
-      />
-      <Text style={styles.text}>Buttons above for testing</Text>
+      <View style={styles.settingsButtonContainer}>
+        <SettingsButton
+          onPress={() => console.log("Goes to Account Settings")}
+          text="Account Settings"
+          icon={
+            <Icon
+              iconName="account-circle"
+              size={24}
+              iconType="MaterialCommunityIcons"
+              color={theme.colors.inverseBackground}
+            />
+          }
+        />
+        <SettingsButton
+          onPress={() => console.log("Goes to Edit Profile")}
+          text="Edit Profile"
+          icon={
+            <Icon
+              iconName="edit"
+              size={18}
+              iconType="FontAwesome5"
+              color={theme.colors.inverseBackground}
+            />
+          }
+        />
+        <SettingsButton
+          onPress={() => console.log("Goes to Language")}
+          text="Language"
+          icon={
+            <Icon
+              iconName="language"
+              size={24}
+              iconType="Ionicons"
+              color={theme.colors.inverseBackground}
+            />
+          }
+        />
+      </View>
+      <View style={{ height: theme.spacing(6) }} />
+      <View style={styles.settingsButtonContainer}>
+        <SettingsButton
+          onPress={() => console.log("Goes to Account Settings")}
+          text="Privacy Policy"
+          icon={
+            <Icon
+              iconName="account-circle"
+              size={24}
+              iconType="MaterialCommunityIcons"
+              color={theme.colors.inverseBackground}
+            />
+          }
+        />
+        <SettingsButton
+          onPress={() => console.log("Goes to Edit Profile")}
+          text="Security"
+          icon={
+            <Icon
+              iconName="edit"
+              size={18}
+              iconType="FontAwesome5"
+              color={theme.colors.inverseBackground}
+            />
+          }
+        />
+      </View>
     </SafeAreaView>
   );
 }
@@ -98,8 +114,6 @@ const stylesHandler = (theme: Theme) =>
       justifyContent: "center",
       alignItems: "center",
       paddingVertical: theme.spacing(4),
-      borderBottomWidth: 1,
-      borderBottomColor: theme.colors.staticGrey,
     },
     profileImage: {
       width: theme.spacing(25),
@@ -121,5 +135,20 @@ const stylesHandler = (theme: Theme) =>
       fontFamily: theme.font.textPrimary.fontFamily,
       fontSize: theme.font.textPrimary.fontSize,
       marginTop: theme.spacing(2),
+    },
+    settingsButtonContainer: {
+      backgroundColor: theme.colors.background,
+      width: theme.spacing(85),
+      padding: theme.spacing(4),
+      borderRadius: theme.spacing(2),
+      elevation: 2, //come back to compare android and ios later
+      shadowColor: theme.colors.staticGrey, //shadow for ios
+      shadowOffset: {
+        width: 0,
+        height: 4,
+      },
+      shadowOpacity: 0.6,
+      justifyContent: "center",
+      alignItems: "flex-start",
     },
   });

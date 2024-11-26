@@ -26,7 +26,7 @@ export const RootNavigator = () => {
             animationDuration: 400,
             gestureEnabled: true,
           }}
-          initialRouteName="SignInScreen"
+          initialRouteName="BottomTabs"
         >
           <Stack.Screen
             name="SignInScreen"
