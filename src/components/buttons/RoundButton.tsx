@@ -4,7 +4,7 @@ import { Theme, useTheme } from "../../../resources/theme/theme";
 interface RoundButtonProps {
   onPress: () => void;
   color?: string;
-  icon?: React.ReactNode;
+  icon?: any;
 }
 
 const RoundButton = ({ onPress, icon, color }: RoundButtonProps) => {

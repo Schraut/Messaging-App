@@ -19,27 +19,9 @@ const TestComponent = () => {
       <LongButton
         onPress={() => console.log("Button Pressed")}
         text="Press Me"
-        icon={
-          <Icon
-            iconName="add"
-            iconType={"MaterialIcons"}
-            size={24}
-            color={theme.colors.inverseBackground}
-          />
-        }
       />
       {/* Long Button receives icon, onPress, and then optionally color*/}
-      <RoundButton
-        onPress={() => console.log("Round Button Pressed")}
-        icon={
-          <Icon
-            iconName="add"
-            iconType={"MaterialIcons"}
-            size={24}
-            color={theme.colors.inverseBackground}
-          />
-        }
-      />
+      <RoundButton onPress={() => console.log("Round Button Pressed")} />
     </View>
   );
 };

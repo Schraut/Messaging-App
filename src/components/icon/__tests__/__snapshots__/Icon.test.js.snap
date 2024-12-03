@@ -2,32 +2,12 @@
 
 exports[`Default Icon renders in dark mode 1`] = `
 <View>
-  <Text
-    allowFontScaling={false}
-    selectable={false}
-    style={
-      [
-        {
-          "color": "#000000",
-          "fontSize": 24,
-        },
-        undefined,
-        {
-          "fontFamily": "material",
-          "fontStyle": "normal",
-          "fontWeight": "normal",
-        },
-        {},
-      ]
-    }
-  >
-    
-  </Text>
+  <View />
 </View>
 `;
 
 exports[`Default Icon renders in light mode 1`] = `
 <View>
-  <Text />
+  <View />
 </View>
 `;

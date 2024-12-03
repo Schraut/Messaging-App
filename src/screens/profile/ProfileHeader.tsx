@@ -1,29 +1,46 @@
-import {
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  Dimensions,
-  View,
-} from "react-native";
+import { StyleSheet, Dimensions, View } from "react-native";
 import { Theme, useTheme } from "../../../resources/theme/theme";
 import RoundButton from "../../components/buttons/RoundButton";
 import Icon from "../../components/icon/Icon";
 
 const screenWidth = Dimensions.get("window").width;
 
-interface SettingsHeaderProps {
+interface ProfileHeaderProps {
   navigation: any;
 }
 
-const SettingsHeader = ({ navigation }: SettingsHeaderProps) => {
+const ProfileHeader = ({ navigation }: ProfileHeaderProps) => {
   const theme = useTheme();
   const styles = stylesHandler(theme);
 
   return (
     <View style={styles.container}>
       <RoundButton
-        onPress={() => {}}
-        icon={<Icon iconName="arrow-back" size={24} iconType="MaterialIcon" />}
+        onPress={() => {
+          console.log("Goes to Notifications");
+        }}
+        icon={
+          <Icon
+            iconName="bell-outline"
+            size={24}
+            iconType="MaterialCommunityIcons"
+            color={theme.colors.inverseBackground}
+          />
+        }
+        color={theme.colors.background}
+      />
+      <RoundButton
+        onPress={() => {
+          console.log("Goes to nowhere for now");
+        }}
+        icon={
+          <Icon
+            iconName="ellipsis-vertical"
+            size={24}
+            iconType="Ionicons"
+            color={theme.colors.inverseBackground}
+          />
+        }
         color={theme.colors.background}
       />
     </View>
@@ -49,4 +66,4 @@ const stylesHandler = (theme: Theme) =>
     },
   });
 
-export default SettingsHeader;
+export default ProfileHeader;
