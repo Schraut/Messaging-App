@@ -9,7 +9,7 @@ describe("Default TestComponent", () => {
       .create(
         <ThemeContent>
           <TestComponent />
-        </ThemeContent>,
+        </ThemeContent>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
@@ -20,7 +20,7 @@ describe("Default TestComponent", () => {
       .create(
         <ThemeContent isDarkMode={true}>
           <TestComponent />
-        </ThemeContent>,
+        </ThemeContent>
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

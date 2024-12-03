@@ -77,29 +77,6 @@ exports[`Default TestComponent renders in dark mode 1`] = `
     >
       Press Me
     </Text>
-    <View>
-      <Text
-        allowFontScaling={false}
-        selectable={false}
-        style={
-          [
-            {
-              "color": "#FFFFFF",
-              "fontSize": 24,
-            },
-            undefined,
-            {
-              "fontFamily": "material",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            {},
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
   </View>
   <View
     accessibilityState={
@@ -141,31 +118,7 @@ exports[`Default TestComponent renders in dark mode 1`] = `
         "width": 40,
       }
     }
-  >
-    <View>
-      <Text
-        allowFontScaling={false}
-        selectable={false}
-        style={
-          [
-            {
-              "color": "#FFFFFF",
-              "fontSize": 24,
-            },
-            undefined,
-            {
-              "fontFamily": "material",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            {},
-          ]
-        }
-      >
-        
-      </Text>
-    </View>
-  </View>
+  />
 </View>
 `;
 
@@ -246,9 +199,6 @@ exports[`Default TestComponent renders in light mode 1`] = `
     >
       Press Me
     </Text>
-    <View>
-      <Text />
-    </View>
   </View>
   <View
     accessibilityState={
@@ -290,10 +240,6 @@ exports[`Default TestComponent renders in light mode 1`] = `
         "width": 40,
       }
     }
-  >
-    <View>
-      <Text />
-    </View>
-  </View>
+  />
 </View>
 `;

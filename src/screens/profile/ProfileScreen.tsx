@@ -1,11 +1,11 @@
 import * as React from "react";
 import { Text, View, StyleSheet, SafeAreaView, Image } from "react-native";
 import { Theme, useTheme } from "../../../resources/theme/theme";
-import SettingsHeader from "./SettingsHeader";
+import ProfileHeader from "./ProfileHeader";
 import SettingsButton from "../../components/buttons/SettingsButton";
 import Icon from "../../components/icon/Icon";
 
-interface SettingsScreenProps {
+interface ProfileScreenProps {
   navigation: any; //we may not need this. Depends on if we take it out of bottomtabs
   firstName: string;
   lastName: string;
@@ -13,19 +13,19 @@ interface SettingsScreenProps {
   profileImage: string;
 }
 
-export default function SettingsScreen({
+export default function ProfileScreen({
   navigation,
   firstName,
   lastName,
   username,
   profileImage,
-}: SettingsScreenProps) {
+}: ProfileScreenProps) {
   const theme = useTheme();
   const styles = stylesHandler(theme);
 
   return (
     <SafeAreaView style={styles.container}>
-      <SettingsHeader navigation={navigation} />
+      <ProfileHeader navigation={navigation} />
       <View style={styles.accountInfo}>
         <Image source={{ uri: profileImage }} style={styles.profileImage} />
         <Text style={styles.nameText}>
@@ -74,7 +74,7 @@ export default function SettingsScreen({
       <View style={{ height: theme.spacing(6) }} />
       <View style={styles.settingsButtonContainer}>
         <SettingsButton
-          onPress={() => console.log("Goes to Account Settings")}
+          onPress={() => console.log("Goes to Privacy Policy")}
           text="Privacy Policy"
           icon={
             <Icon
@@ -86,13 +86,13 @@ export default function SettingsScreen({
           }
         />
         <SettingsButton
-          onPress={() => console.log("Goes to Edit Profile")}
+          onPress={() => console.log("Goes to Security")}
           text="Security"
           icon={
             <Icon
-              iconName="edit"
-              size={18}
-              iconType="FontAwesome5"
+              iconName="lock-check"
+              size={24}
+              iconType="MaterialCommunityIcons"
               color={theme.colors.inverseBackground}
             />
           }
@@ -113,7 +113,7 @@ const stylesHandler = (theme: Theme) =>
       width: "100%",
       justifyContent: "center",
       alignItems: "center",
-      paddingVertical: theme.spacing(4),
+      paddingVertical: theme.spacing(5),
     },
     profileImage: {
       width: theme.spacing(25),

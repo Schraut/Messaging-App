@@ -12,7 +12,7 @@ const screenWidth = Dimensions.get("window").width;
 interface SettingsButtonProps {
   onPress: () => void;
   text: string;
-  icon?: React.ReactNode;
+  icon?: any;
 }
 
 const SettingsButton = ({ onPress, text, icon }: SettingsButtonProps) => {

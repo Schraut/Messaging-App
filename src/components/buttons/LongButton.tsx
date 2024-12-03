@@ -5,7 +5,7 @@ interface LongButtonProps {
   onPress: () => void;
   text: string;
   color?: string;
-  icon?: React.ReactNode;
+  icon?: any;
 }
 
 const LongButton = ({ onPress, text, icon, color }: LongButtonProps) => {

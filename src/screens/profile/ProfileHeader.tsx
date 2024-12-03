@@ -5,11 +5,11 @@ import Icon from "../../components/icon/Icon";
 
 const screenWidth = Dimensions.get("window").width;
 
-interface SettingsHeaderProps {
+interface ProfileHeaderProps {
   navigation: any;
 }
 
-const SettingsHeader = ({ navigation }: SettingsHeaderProps) => {
+const ProfileHeader = ({ navigation }: ProfileHeaderProps) => {
   const theme = useTheme();
   const styles = stylesHandler(theme);
 
@@ -66,4 +66,4 @@ const stylesHandler = (theme: Theme) =>
     },
   });
 
-export default SettingsHeader;
+export default ProfileHeader;
