@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Text, View, StyleSheet, SafeAreaView, Image } from "react-native";
+import { Text, View, StyleSheet,  Image } from "react-native";
 import { Theme, useTheme } from "../../../resources/theme/theme";
 import ProfileHeader from "./ProfileHeader";
 import SettingsButton from "../../components/buttons/SettingsButton";
 import Icon from "../../components/icon/Icon";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 interface ProfileScreenProps {
   navigation: any; //we may not need this. Depends on if we take it out of bottomtabs

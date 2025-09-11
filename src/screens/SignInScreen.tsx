@@ -5,12 +5,12 @@ import {
   TextInput,
   Image,
   TouchableOpacity,
-  SafeAreaView,
 } from "react-native";
 import { Theme, useTheme } from "../../resources/theme/theme";
 import HeaderTitle from "../components/header_title/HeaderTitle";
 import { useState } from "react";
 import LongButton from "../components/buttons/LongButton";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function SignInScreen({ navigation }: any) {
   const theme = useTheme();
